@@ -1,0 +1,29 @@
+{
+	"landingPage": "\/wp-admin\/upload.php?mode=list",
+	"preferredVersions": {
+		"php": "8.2",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	},
+	"steps": [
+		{
+			"step": "login",
+			"username": "admin",
+			"password": "password"
+		},
+		{
+			"step": "writeFile",
+			"path": "\/wordpress\/example.png",
+			"data": {
+				"resource": "url",
+				"url": "https:\/\/www.thomaszwirner.de\/wp-admin\/images\/wordpress-logo.png"
+			}
+		},
+		{
+			"step": "wp-cli",
+			"command": "wp media import \/wordpress\/example.png --post_id=1"
+		}
+	]
+}

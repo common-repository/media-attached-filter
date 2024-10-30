@@ -1,0 +1,14 @@
+#maf_attached {
+    font-size: 14px;
+    line-height: 2;
+    color: #2c3338;
+    border: 1px solid #8c8f94;
+    box-shadow: none;
+    border-radius: 3px;
+    padding: 0 24px 0 8px;
+    min-height: 30px;
+    max-width: 25rem;
+    -webkit-appearance: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
